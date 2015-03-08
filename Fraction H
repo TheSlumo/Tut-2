@@ -1,0 +1,28 @@
+//Yasar Mahomed Abbas
+//213532608
+
+#ifndef FRACTION_H
+#define FRACTION_H
+class Fraction {
+private :
+int num;
+int den;
+void simplify(int &nLCM, int &dLCM);
+public :
+Fraction();
+void print();
+void add(Fraction B);
+void subtract(Fraction B);
+void multiply(Fraction B);
+void divide(Fraction B);
+void setNumerator(int nset);
+void setDenominator(int dset);
+int getNumerator();
+int getDenominator();
+~Fraction();
+Fraction operator+(const Fraction &B);
+Fraction operator-(const Fraction &B);
+Fraction operator*(const Fraction &B);
+Fraction operator/(const Fraction &B);
+};
+#endif
