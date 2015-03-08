@@ -1,0 +1,44 @@
+//Yasar Mahomed Abbas
+//213532608
+
+
+#include "Fraction.h"
+#include <iostream>
+#include <string>
+using namespace std;
+void requestInput(Fraction &frac) {
+int i;
+cout << "input your numerator";
+cin >> i;
+frac.setNumerator(i);
+cout << "input your denominator";
+cin >> i;
+frac.setDenominator(i);
+};
+int main() {
+Fraction A;
+Fraction B;
+requestInput(A);
+requestInput(B);
+int option;
+cout << "choose an option A <operator> B" << endl << "1. +" << endl << "2. -" << endl << "3. *" << endl << "4. /" << endl;
+cin >> option;
+switch (option)
+{
+case (1) : A + B;
+A.print();
+break;
+case (2) : A - B;
+A.print();
+break;
+case (3) : A * B;
+A.print();
+break;
+case (4) : A / B;
+A.print();
+break;
+default:
+break;
+}
+return 0;
+};
